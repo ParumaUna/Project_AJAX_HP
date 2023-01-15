@@ -1,0 +1,44 @@
+body{
+    margin:0;
+    width:100%;
+    height:100%;
+    background-color: rgb(68, 68, 117);
+   }
+
+img{
+    height: 150px;
+    width: 150px;
+    
+}
+#maincontainer div{
+    display: inline-block;
+    margin: 10px;
+    height: 300px;
+    width: 200px;
+}
+
+h1{
+    font-family: 'Harry Potter', sans-serif;
+    display: inline;
+    text-decoration-color: white;
+    display: grid;
+    justify-content: center;
+}
+#header{
+    margin: 20px;
+
+    align-content: center;
+}
+a{
+    text-decoration: none;
+    padding: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+#url{
+    background-color: black;
+    height: 30px;
+    padding-top: 10px;
+}
+
+a:active { color:rgb(41, 41, 182) }
