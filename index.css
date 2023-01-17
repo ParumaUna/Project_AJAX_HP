@@ -70,6 +70,7 @@ h2{
 a{
     padding: 20px;
     text-decoration: none;
+    color: rgb(101, 43, 215);
 }
 #url{
     background-color: black;
@@ -80,4 +81,4 @@ a{
 p{
     text-align: center;
 }
-a:active { color:rgb(41, 41, 182) }
+a:active { color:mediumpurple }
