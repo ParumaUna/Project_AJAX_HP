@@ -3,7 +3,6 @@ body{
     margin: unset;
 
    }
-
 #maincontainer{
     display: flex;
     flex-direction: row;
@@ -14,7 +13,6 @@ body{
 div h2{
     max-width: 200px;
     max-height: 250px;
-
 }
 img{
     height: 200px;
@@ -35,7 +33,6 @@ div{
 #pic-display{
     width: 100vw;
     height: 600px;
-   /* overflow: hidden;*/
 }
 #welcome{
     object-fit: cover;
