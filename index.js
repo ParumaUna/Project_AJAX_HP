@@ -19,9 +19,11 @@ try {
     for(let character of characters){
 
         maincontainer.innerHTML += `
+        <div>
             <h2>${character.name}</h2>
-            <img src="${character.image_url}"></h2>
-            <p>${character.species}</p>
+            <img class="img" src="${character.image_url}"></h2>
+            <p>Species: ${character.species}</p>
+        </div>
         `
     }
 } catch (error) {
@@ -29,6 +31,7 @@ try {
 } finally {
     console.log('Will always run at the end, no matter the outcome of the request')
 }
+
 })
 
 book.addEventListener('click',async function(e){
@@ -43,9 +46,11 @@ book.addEventListener('click',async function(e){
         for(let book of books){
         
                 maincontainer.innerHTML += `
-                <h2>${book.title}</h2>
-                <img src="${book.image_url}">
-                </h2><p>${book.release_date.slice(0,10)}</p>
+                <div>
+                    <h2>${book.title}</h2>
+                    <img class="img" src="${book.image_url}">
+                    </h2><p>${book.release_date.slice(0,10)}</p>
+                </div>
            `
         }
 
@@ -67,11 +72,13 @@ house.addEventListener('click',async function(e){
         const houses = data;
         maincontainer.innerHTML = "";
         for(let house of houses){
-        
-                maincontainer.innerHTML += `
+        console.log(house.image_url);
+            maincontainer.innerHTML += `
+            <div>
                 <h2>${house.name}</h2>
-                <img src="${house.image_url}">
-                </h2><p>${'Members: '+house.members}</p>
+                <img "src="${house.image_url}">
+                <p>Members: ${house.members}</p>
+            <div/>
            `
         }
 

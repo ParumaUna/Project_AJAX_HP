@@ -1,41 +1,86 @@
 body{
-    margin:0;
-    width:100%;
-    height:100%;
     background-color: rgb(68, 68, 117);
+    margin: unset;
+
    }
 
-img{
-    height: 150px;
-    width: 150px;
-    
+#maincontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
 }
-#maincontainer div,
-img{
-    margin: 10px;
-    height: 150px;
-    width: 150px;
-}
+div h2{
+    max-width: 200px;
+    max-height: 250px;
 
+}
+img{
+    height: 200px;
+    width: 200px;
+    align-items: center;
+}
+.img{
+    transition: 1s;
+}
+.img:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+div{
+    align-content: center;
+
+}
+#pic-display{
+    width: 100vw;
+    height: 600px;
+   /* overflow: hidden;*/
+}
+#welcome{
+    object-fit: cover;
+    color: mediumpurple;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Harry Potter', sans-serif;
+}
+#p-welcome{
+    object-fit: cover;
+    color: mediumpurple;
+    position: absolute;
+    top: 45%;
+    width: 70%;
+    text-align: center;
+    font-size: large;
+    font-family: 'Harry Potter', sans-serif;
+    padding-left:15% ;
+}
 h1{
     font-family: 'Harry Potter', sans-serif;
-    text-decoration-color: white;
     display: grid;
     justify-content: center;
+    font-size: -webkit-xxx-large;
+}
+h2{
+    text-align: center;
 }
 #header{
-    margin: 20px;
+    width: 100%;
 }
 a{
-    text-decoration: none;
     padding: 20px;
-    margin-top: 20px;
     text-decoration: none;
 }
 #url{
     background-color: black;
-    height: 30px;
-    padding-top: 10px;
+    height: 50px;
+    padding-top: 30px;
+    text-align: center;
 }
-
+p{
+    text-align: center;
+}
 a:active { color:rgb(41, 41, 182) }
